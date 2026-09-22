@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 78686385}
   - component: {fileID: 78686389}
   - component: {fileID: 78686388}
+  - component: {fileID: 78686390}
   m_Layer: 0
   m_Name: Jerry-SpriteSheet-Run_0
   m_TagString: Untagged
@@ -229,8 +230,8 @@ Transform:
   m_GameObject: {fileID: 78686384}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.11, y: 3.7, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 1}
+  m_LocalPosition: {x: -10.23, y: -2.48, z: 0}
+  m_LocalScale: {x: 9.467669, y: 8.34508, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -308,6 +309,20 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.35, y: 0.57}
   m_EdgeRadius: 0
+--- !u!114 &78686390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78686384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 075faf35d15aff54387ea5de25a5aa5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerJump
+  jumpForce: 10
+  playerRB: {fileID: 78686388}
 --- !u!1 &303272436
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,7 +465,7 @@ GameObject:
   - component: {fileID: 917312501}
   m_Layer: 0
   m_Name: Kitchen_Ledge_0
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -485,7 +500,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0

@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 1679441db3eeed44dbf4cbce653a52aa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8635145700183910825
+    second: condiments-removebg-preview_0
+  - first:
+      213: -5797255022195658132
+    second: condiments-removebg-preview_1
+  - first:
+      213: -2227032874923779495
+    second: condiments-removebg-preview_2
+  - first:
+      213: -6400632922815609504
+    second: condiments-removebg-preview_3
+  - first:
+      213: 3621376470148535078
+    second: condiments-removebg-preview_4
+  - first:
+      213: -5753336385714299446
+    second: condiments-removebg-preview_5
+  - first:
+      213: 5409505576763205434
+    second: condiments-removebg-preview_6
+  - first:
+      213: -7388030285562804038
+    second: condiments-removebg-preview_7
+  - first:
+      213: -403149099451923168
+    second: condiments-removebg-preview_8
+  - first:
+      213: 6404234156103008834
+    second: condiments-removebg-preview_9
+  - first:
+      213: 7982489625864088555
+    second: condiments-removebg-preview_10
+  - first:
+      213: -519593383015541926
+    second: condiments-removebg-preview_11
+  - first:
+      213: 1032369117834262868
+    second: condiments-removebg-preview_12
+  - first:
+      213: -784116683474964559
+    second: condiments-removebg-preview_13
+  - first:
+      213: 2820435391914329894
+    second: condiments-removebg-preview_14
+  - first:
+      213: -8326655865280229843
+    second: condiments-removebg-preview_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: condiments-removebg-preview_0
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 282
+        width: 66
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a9243b634336d770800000000000000
+      internalID: 8635145700183910825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condiments-removebg-preview_1
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 282
+        width: 78
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c62bda1c5430c8fa0800000000000000
+      internalID: -5797255022195658132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condiments-removebg-preview_2
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 282
+        width: 55
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95a1d0b466df711e0800000000000000
+      internalID: -2227032874923779495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condiments-removebg-preview_3
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 282
+        width: 66
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 065c7e9c4426c27a0800000000000000
+      internalID: -6400632922815609504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condiments-removebg-preview_4
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 156
+        width: 60
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 623592576b6b14230800000000000000
+      internalID: 3621376470148535078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condiments-removebg-preview_5
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 156
+        width: 44
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acd5b282a0b0820b0800000000000000
+      internalID: -5753336385714299446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condiments-removebg-preview_6
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 156
+        width: 73
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a37277949ac621b40800000000000000
+      internalID: 5409505576763205434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condiments-removebg-preview_7
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 156
+        width: 55
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab883374991787990800000000000000
+      internalID: -7388030285562804038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condiments-removebg-preview_8
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 74
+        width: 15
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02546afa70ab76af0800000000000000
+      internalID: -403149099451923168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condiments-removebg-preview_9
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 79
+        width: 13
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24281fca80960e850800000000000000
+      internalID: 6404234156103008834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condiments-removebg-preview_10
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 29
+        width: 60
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bebaedc850087ce60800000000000000
+      internalID: 7982489625864088555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condiments-removebg-preview_11
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 30
+        width: 88
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5317b132980ac8f0800000000000000
+      internalID: -519593383015541926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condiments-removebg-preview_12
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 29
+        width: 78
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45938913e36b35e00800000000000000
+      internalID: 1032369117834262868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condiments-removebg-preview_13
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 29
+        width: 77
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bf6403e7024e15f0800000000000000
+      internalID: -784116683474964559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condiments-removebg-preview_14
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 43
+        width: 13
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6274efeab03342720800000000000000
+      internalID: 2820435391914329894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: condiments-removebg-preview_15
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 7
+        width: 13
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e8c076b96c17c80800000000000000
+      internalID: -8326655865280229843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      condiments-removebg-preview_0: 8635145700183910825
+      condiments-removebg-preview_1: -5797255022195658132
+      condiments-removebg-preview_10: 7982489625864088555
+      condiments-removebg-preview_11: -519593383015541926
+      condiments-removebg-preview_12: 1032369117834262868
+      condiments-removebg-preview_13: -784116683474964559
+      condiments-removebg-preview_14: 2820435391914329894
+      condiments-removebg-preview_15: -8326655865280229843
+      condiments-removebg-preview_2: -2227032874923779495
+      condiments-removebg-preview_3: -6400632922815609504
+      condiments-removebg-preview_4: 3621376470148535078
+      condiments-removebg-preview_5: -5753336385714299446
+      condiments-removebg-preview_6: 5409505576763205434
+      condiments-removebg-preview_7: -7388030285562804038
+      condiments-removebg-preview_8: -403149099451923168
+      condiments-removebg-preview_9: 6404234156103008834
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
