@@ -10,7 +10,7 @@ public class Restart : MonoBehaviour
     {
         
     }
-    private void Awake()
+    public void Awake()
     {
         // Automatically grab the Button component on this GameObject
         Button button = GetComponent<Button>();

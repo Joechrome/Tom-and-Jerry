@@ -11,7 +11,7 @@ namespace CheeseDash
         [SerializeField] private string label = "SCORE";
 
         [Header("Display")]
-        [SerializeField] private Vector2 position = new Vector2(24f, 16f);
+        [SerializeField] private Vector2 position = new Vector2(0f, 0f);
         [SerializeField] private int textSize = 36;
         [SerializeField] private Font fontOverride;
 
