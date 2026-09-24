@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2472704212997424221}
   - component: {fileID: 3480246758605407592}
   - component: {fileID: 5039165018184278318}
+  - component: {fileID: 4192873515807498866}
   m_Layer: 0
   m_Name: obstacle_short_0
   m_TagString: Untagged
@@ -27,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 4747188341253564131}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.1544418, y: -2.2602859, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 3.1544418, y: 0, z: 0}
+  m_LocalScale: {x: 5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -138,3 +139,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.07, y: 0.45}
   m_EdgeRadius: 0
+--- !u!114 &4192873515807498866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4747188341253564131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6474de72a77d0664ca902f1707970c6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  speed: 20
