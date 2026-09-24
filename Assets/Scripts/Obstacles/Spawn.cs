@@ -16,7 +16,7 @@ public class RandomSpawner : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(0.2f, 1));
+            yield return new WaitForSeconds(Random.Range(1, 5));
             GameObject prefab = entries[Random.Range(0,2)].prefab;
             if (prefab == null) continue;
 

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 260900997954111127}
   - component: {fileID: 8444999533060571724}
   - component: {fileID: 306511004658393347}
+  - component: {fileID: -6727882158638196444}
   m_Layer: 0
   m_Name: obstacle_high_0
   m_TagString: Untagged
@@ -27,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 5822498337319883653}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.295143, y: -2.2602859, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.295143, y: 0, z: 0}
+  m_LocalScale: {x: 2.5, y: 5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -138,3 +139,16 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.9, y: 1.07}
   m_EdgeRadius: 0
+--- !u!114 &-6727882158638196444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5822498337319883653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a168549fefc1c7c44b8b172eda87e0aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  speed: 20
