@@ -18,9 +18,15 @@ public class RandomSpawner : MonoBehaviour
         {
             yield return new WaitForSeconds(Random.Range(1, 5));
             GameObject prefab = entries[Random.Range(0,2)].prefab;
-            if (prefab == null) continue;
-
-            Instantiate(prefab, new Vector3(15, -3.5f), Quaternion.identity);
+            //if (prefab == null) continue;
+            if (prefab == entries[0].prefab)
+            {
+                Instantiate(prefab, new Vector3(15, -1.5f), Quaternion.identity);
+            }
+            if (prefab == entries[1].prefab)
+            {
+                Instantiate(prefab, new Vector3(15, -2.25f), Quaternion.identity);
+            }
         }
     }
 }
