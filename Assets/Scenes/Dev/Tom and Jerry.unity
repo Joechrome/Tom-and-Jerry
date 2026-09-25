@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 78686389}
   - component: {fileID: 78686388}
   - component: {fileID: 78686390}
+  - component: {fileID: 78686391}
   m_Layer: 0
   m_Name: Jerry-SpriteSheet-Run_0
   m_TagString: Untagged
@@ -326,6 +327,18 @@ MonoBehaviour:
   holdTime: 0.15
   jumpForceShort: 21
   jumpForceLong: 25
+--- !u!114 &78686391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78686384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7297cf35aeb61f545b97e2e04f2399b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Die
 --- !u!1 &295214377
 GameObject:
   m_ObjectHideFlags: 0
