@@ -9,12 +9,14 @@ public class Die : MonoBehaviour
     {
         
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionStay2D(Collision2D collision)
     {
-        // Check if the colliding object is the floor
-        if (collision.gameObject.CompareTag("obstacles"))
+        Debug.Log("collide");
+
+        if (collision.gameObject.CompareTag("Obstacles"))
         {
-            SceneManager.LoadScene("sceneName");
+            Debug.Log("Player has collided with an obstacle and will die.");
+            SceneManager.LoadScene("The end");
         }
     }
     // Update is called once per frame
