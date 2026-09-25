@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
 {
+    public Button button;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,11 +13,10 @@ public class Restart : MonoBehaviour
     }
     public void Awake()
     {
-        // Automatically grab the Button component on this GameObject
-        Button button = GetComponent<Button>();
+        Debug.Log("Restart script is awake.");
 
         // Register the click listener programmatically
-        button.onClick.AddListener(() => SceneManager.LoadScene("sceneName"));
+        button.onClick.AddListener(() => SceneManager.LoadScene("Tom and Jerry"));
     }
     // Update is called once per frame
     void Update()
