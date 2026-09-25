@@ -133,6 +133,7 @@ GameObject:
   - component: {fileID: 78686389}
   - component: {fileID: 78686388}
   - component: {fileID: 78686390}
+  - component: {fileID: 78686392}
   m_Layer: 0
   m_Name: Jerry-SpriteSheet-Run_0
   m_TagString: Untagged
@@ -326,6 +327,18 @@ MonoBehaviour:
   holdTime: 0.2
   jumpForceShort: 7
   jumpForceLong: 10
+--- !u!114 &78686392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78686384}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7297cf35aeb61f545b97e2e04f2399b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Die
 --- !u!1 &657921330
 GameObject:
   m_ObjectHideFlags: 0
@@ -1317,7 +1330,7 @@ GameObject:
   - component: {fileID: 2134488839}
   - component: {fileID: 2134488842}
   - component: {fileID: 2134488841}
-  - component: {fileID: 2134488840}
+  - component: {fileID: 2134488843}
   m_Layer: 5
   m_Name: Score board
   m_TagString: Untagged
@@ -1344,20 +1357,6 @@ RectTransform:
   m_AnchoredPosition: {x: -416.96, y: -172.46}
   m_SizeDelta: {x: 50, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2134488840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2134488838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaa4bfb5ea9dfd943ae712ca720d352b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CheeseDash.Scoreboard
-  framesPerPoint: 10
-  label: 'SCORE: '
 --- !u!114 &2134488841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1460,6 +1459,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2134488838}
   m_CullTransparentMesh: 1
+--- !u!114 &2134488843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2134488838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aaa4bfb5ea9dfd943ae712ca720d352b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CheeseDash.Scoreboard
+  framesPerPoint: 10
+  label: 'SCORE: '
+  value: 100
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

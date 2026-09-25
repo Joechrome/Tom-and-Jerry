@@ -1,15 +1,19 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using static UnityEngine.Rendering.DebugUI;
 
 namespace CheeseDash
 {
     [AddComponentMenu("Cheese Dash/Scoreboard")]
+    
     public class Scoreboard : MonoBehaviour
     {
         [SerializeField] private int framesPerPoint = 10;
         [SerializeField] private string label = "SCORE";
-
+        public float value = 0f;
         private TMP_Text _tmpText;
         private Text _uiText;
         private double _frameAccumulator;
@@ -79,6 +83,10 @@ namespace CheeseDash
             _score = newScore;
             RefreshText();
             ScoreChanged?.Invoke(_score);
+            if (_score >= value)
+            {
+                SceneManager.LoadScene("Win Screen");
+            }
         }
 
         private void OnValidate()
@@ -95,5 +103,6 @@ namespace CheeseDash
             if (_tmpText != null) _tmpText.text = value;
             else if (_uiText != null) _uiText.text = value;
         }
+        
     }
 }
