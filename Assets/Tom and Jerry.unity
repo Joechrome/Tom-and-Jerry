@@ -324,7 +324,7 @@ MonoBehaviour:
   playerRB: {fileID: 78686388}
   max: {fileID: 1635979629}
   holdTime: 0.15
-  jumpForceShort: 18
+  jumpForceShort: 21
   jumpForceLong: 25
 --- !u!1 &295214377
 GameObject:
