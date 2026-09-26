@@ -1,108 +1,55 @@
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-using static UnityEngine.Rendering.DebugUI;
 
 namespace CheeseDash
 {
     [AddComponentMenu("Cheese Dash/Scoreboard")]
-    
     public class Scoreboard : MonoBehaviour
     {
         [SerializeField] private int framesPerPoint = 10;
         [SerializeField] private string label = "SCORE";
-        public float value = 0f;
-        private TMP_Text _tmpText;
-        private Text _uiText;
-        private double _frameAccumulator;
+        public float winScore;
+
+        private TMP_Text _text;
         private long _frames;
         private int _score;
-        private bool _running = true;
-
-        public int Score => _score;
-        public long Frames => _frames;
-        public bool IsRunning => _running;
-        public bool NormaliseFrameRate { get; set; } = false;
-        public float ReferenceFramesPerSecond { get; set; } = 60f;
-
-        public event System.Action<int> ScoreChanged;
-
-        public void SetRunning(bool running)
-        {
-            _running = running;
-        }
-
-        public void ResetScore()
-        {
-            _frameAccumulator = 0d;
-            _frames = 0;
-            _score = 0;
-            RefreshText();
-            ScoreChanged?.Invoke(_score);
-        }
 
         private void Awake()
         {
-            _tmpText = GetComponent<TMP_Text>();
-            if (_tmpText == null) _tmpText = GetComponentInChildren<TMP_Text>();
+            _text = GetComponent<TMP_Text>();
+            if (_text == null) _text = GetComponentInChildren<TMP_Text>();
 
-            if (_tmpText == null)
+            if (_text == null)
             {
-                _uiText = GetComponent<Text>();
-                if (_uiText == null) _uiText = GetComponentInChildren<Text>();
-            }
-
-            if (_tmpText == null && _uiText == null)
-            {
-                Debug.LogError("[Scoreboard] This component has to sit on a text object. " +
-                               "Add it to a TextMeshPro text (or a UI Text) and it will use that.",
-                               this);
                 enabled = false;
                 return;
             }
 
-            RefreshText();
+            Show();
         }
 
         private void Update()
         {
-            if (!_running) return;
             if (Time.timeScale <= 0f) return;
 
-            _frameAccumulator += NormaliseFrameRate
-                ? Time.deltaTime * ReferenceFramesPerSecond
-                : 1d;
+            _frames++;
 
-            _frames = (long)_frameAccumulator;
+            int score = (int)(_frames / Mathf.Max(1, framesPerPoint));
+            if (score == _score) return;
 
-            int newScore = (int)(_frames / Mathf.Max(1, framesPerPoint));
-            if (newScore == _score) return;
+            _score = score;
+            Show();
 
-            _score = newScore;
-            RefreshText();
-            ScoreChanged?.Invoke(_score);
-            if (_score >= value)
+            if (winScore > 0f && _score >= winScore)
             {
                 SceneManager.LoadScene("Win Screen");
             }
         }
 
-        private void OnValidate()
+        private void Show()
         {
-            framesPerPoint = Mathf.Max(1, framesPerPoint);
+            _text.text = string.IsNullOrEmpty(label) ? _score.ToString() : $"{label} {_score}";
         }
-
-        private void RefreshText()
-        {
-            string value = string.IsNullOrEmpty(label)
-                ? _score.ToString()
-                : $"{label} {_score}";
-
-            if (_tmpText != null) _tmpText.text = value;
-            else if (_uiText != null) _uiText.text = value;
-        }
-        
     }
 }

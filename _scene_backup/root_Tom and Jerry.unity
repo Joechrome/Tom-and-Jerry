@@ -1644,7 +1644,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CheeseDash.Scoreboard
   framesPerPoint: 10
   label: 'SCORE: '
-  winScore: 1000
+  winScore: 500
 --- !u!1001 &253968909016706624
 PrefabInstance:
   m_ObjectHideFlags: 0

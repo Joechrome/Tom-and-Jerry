@@ -8,26 +8,11 @@ namespace CheeseDash
     public class JumpEffect : MonoBehaviour
     {
         [SerializeField] private AudioClip mouseSound;
-
-        [Tooltip("Off: one sound each time space goes down. " +
-                 "On: the sound repeats for as long as space is held down.")]
-        [SerializeField] private bool repeatWhileHeld = false;
-
+        [SerializeField] private bool repeatWhileHeld;
         [SerializeField] private float repeatDelay = 0.35f;
 
         private AudioSource _source;
         private float _nextPlayTime;
-
-        private void Reset()
-        {
-#if UNITY_EDITOR
-            if (mouseSound == null)
-            {
-                mouseSound = UnityEditor.AssetDatabase.LoadAssetAtPath<AudioClip>(
-                    "Assets/Art/Audio/mouse sound.wav");
-            }
-#endif
-        }
 
         private void Awake()
         {
@@ -40,27 +25,22 @@ namespace CheeseDash
 
         private void Update()
         {
-            if (Keyboard.current == null) return;
+            if (Keyboard.current == null || mouseSound == null) return;
 
             if (Keyboard.current.spaceKey.wasPressedThisFrame)
             {
                 Play();
-                _nextPlayTime = Time.time + repeatDelay;
-                return;
             }
-
-            if (!repeatWhileHeld) return;
-            if (!Keyboard.current.spaceKey.isPressed) return;
-            if (Time.time < _nextPlayTime) return;
-
-            Play();
-            _nextPlayTime = Time.time + repeatDelay;
+            else if (repeatWhileHeld && Keyboard.current.spaceKey.isPressed && Time.time >= _nextPlayTime)
+            {
+                Play();
+            }
         }
 
         private void Play()
         {
-            if (mouseSound == null) return;
             _source.PlayOneShot(mouseSound);
+            _nextPlayTime = Time.time + repeatDelay;
         }
     }
 }
