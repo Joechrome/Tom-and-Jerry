@@ -1642,7 +1642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa4bfb5ea9dfd943ae712ca720d352b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CheeseDash.Scoreboard
-  framesPerPoint: 10
+  framesPerPoint: 2
   label: 'SCORE: '
   winScore: 1000
 --- !u!1001 &253968909016706624

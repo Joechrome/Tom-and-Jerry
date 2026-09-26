@@ -7,12 +7,14 @@ namespace CheeseDash
     [AddComponentMenu("Cheese Dash/Scoreboard")]
     public class Scoreboard : MonoBehaviour
     {
+        private const float ReferenceFrameRate = 60f;
+
         [SerializeField] private int framesPerPoint = 10;
         [SerializeField] private string label = "SCORE";
         public float winScore;
 
         private TMP_Text _text;
-        private long _frames;
+        private double _frames;
         private int _score;
 
         private void Awake()
@@ -33,7 +35,7 @@ namespace CheeseDash
         {
             if (Time.timeScale <= 0f) return;
 
-            _frames++;
+            _frames += Time.deltaTime * ReferenceFrameRate;
 
             int score = (int)(_frames / Mathf.Max(1, framesPerPoint));
             if (score == _score) return;
