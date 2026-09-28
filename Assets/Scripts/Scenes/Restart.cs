@@ -16,7 +16,7 @@ public class Restart : MonoBehaviour
         Debug.Log("Restart script is awake.");
 
         // Register the click listener programmatically
-        button.onClick.AddListener(() => SceneManager.LoadScene("Tom and Jerry"));
+        button.onClick.AddListener(() => SceneManager.LoadScene("Main Menu"));
     }
     // Update is called once per frame
     void Update()

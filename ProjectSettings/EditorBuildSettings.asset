@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Tom and Jerry.unity
     guid: 541e1d48e9c274a43951d15ecd84220d
   - enabled: 1
-    path: Assets/Scenes/Gameplay/Win Screen.unity
+    path: Assets/Scenes/Dev/Win Screen.unity
     guid: ffe7d11be19949a478c165e70dfb0c7a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
